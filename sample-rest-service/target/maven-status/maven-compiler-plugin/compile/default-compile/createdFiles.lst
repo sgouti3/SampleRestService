@@ -1,0 +1,13 @@
+com\camline\products\ecap\external\service\handler\config\Readproperty.class
+com\camline\products\ecap\external\service\handler\model\SampleRequestObject.class
+com\camline\products\ecap\external\service\handler\model\GetLotHistoryResponseSample.class
+com\camline\products\ecap\external\service\handler\config\SampleRestServiceConfiguration.class
+com\camline\products\ecap\external\service\handler\model\Sample.class
+com\camline\products\ecap\external\service\handler\model\SampleRequestForWebService1.class
+com\camline\products\ecap\external\service\handler\model\GetLotHistoryRequestSample.class
+com\camline\products\ecap\external\service\handler\config\RequestLoggingConfiguration.class
+com\camline\products\ecap\external\service\handler\model\SampleResponseForWebService2.class
+com\camline\products\ecap\external\service\handler\model\SampleRequestForWebService2.class
+com\camline\products\ecap\external\service\handler\server\SimpleRestApisApplication.class
+com\camline\products\ecap\external\service\handler\controller\SampleService.class
+com\camline\products\ecap\external\service\handler\model\SampleResponseForWebService1.class
