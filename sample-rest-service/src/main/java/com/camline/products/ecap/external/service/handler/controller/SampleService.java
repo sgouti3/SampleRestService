@@ -144,10 +144,16 @@ public class SampleService {
         sample.setTimeStamp(new Date[] {GregorianCalendar.getInstance().getTime(), GregorianCalendar.getInstance().getTime(), GregorianCalendar.getInstance().getTime(), GregorianCalendar.getInstance().getTime(), GregorianCalendar.getInstance().getTime(),request.getNotOlderThan()});
         return sample;
     }
-	@PostMapping(value=  {"/PostLotHistorywithName/{LotID}/Siddharth"}, consumes=MediaType.APPLICATION_JSON_UTF8_VALUE, produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@PostMapping(value=  {"/PostLotHistorywithName/{LotID}/Delay"}, consumes=MediaType.APPLICATION_JSON_UTF8_VALUE, produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
     public GetLotHistoryResponseSample PostLotHistoryWithOptional(@PathVariable(name="LotID",required = false) String lotId,@RequestBody GetLotHistoryRequestSample request) {
 		logger.info("***************************************** Params: " + request);
        GetLotHistoryResponseSample sample = new GetLotHistoryResponseSample();
+       try {
+		Thread.sleep(8000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
        String username = StringUtils.isEmpty(request.getLotId()) ? "MTE003" : request.getLotId();
        sample.setSteps(new int[] {1, 2, 3, 4,5,6 });
         sample.setpToolId(new String[] {"LTD013", "LTD02", "LTD03", "LTD04", "LTD05",username});
